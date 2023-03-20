@@ -12,6 +12,15 @@ async function main() {
     await simpleStorage.deployTransaction.wait(6);
     await verify(simpleStorage.address, []);
   }
+
+  //Interaction with the functions
+  const currentValue = await simpleStorage.favoriteNumber();
+  console.log(`Current valus is: ${currentValue}`);
+
+  const updateValue = await simpleStorage.store("69");
+  await updateValue.wait(1);
+  const newValue = await simpleStorage.favoriteNumber();
+  console.log(`Current valus is: ${newValue}`);
 }
 
 async function verify(contractAddress, args) {
