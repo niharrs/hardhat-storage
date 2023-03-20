@@ -10,6 +10,8 @@ myproject
 cache
 artifacts
 gas-report.txt
+coverage.json
+coverage
 
 # VS Code workspace config
 workspace.code-workspace
