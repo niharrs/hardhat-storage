@@ -115,3 +115,4 @@ Cargo.lock
 
 # VSCode settings
 .vscode/
+/cache/console-history.txt
