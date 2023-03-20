@@ -6,6 +6,11 @@ myproject
 *.tsbuildinfo
 .env
 
+#Hardhat files
+cache
+artifacts
+gas-report.txt
+
 # VS Code workspace config
 workspace.code-workspace
 
